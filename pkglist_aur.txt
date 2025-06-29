@@ -1,0 +1,12 @@
+arc-gtk-theme
+brave-bin
+figma-linux
+freedownloadmanager
+gparted-git
+notion-app-electron
+postman-bin
+telegram-desktop-bin
+ventoy-bin
+visual-studio-code-bin
+yay
+yay-debug

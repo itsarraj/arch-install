@@ -11,7 +11,7 @@ KEYMAP="us"
 EFI_SIZE="1G"
 CRYPT_DEVICE_NAME="reich"
 VG_NAME="land"
-INSTALL_PKGS="base base-devel linux linux-firmware lvm2"
+INSTALL_PKGS="base base-devel linux linux-firmware lvm2 iwd"
 
 
 # Disk selection
@@ -146,7 +146,7 @@ configure_system() {
     # CHANGED: Font verification and installation
     # ========================================================================
     echo "Verifying console font..."
-    if [ -f "/usr/share/kbd/consolefonts/latarcyrheb-sun32.psf.gz" ]; then
+    if [ -f "/usr/share/kbd/consolefonts/latarcyrheb-sun32.psfu.gz" ]; then
         echo "FONT=latarcyrheb-sun32" >> /etc/vconsole.conf
     else
         echo "WARNING: Console font not found, installing terminus-font..."
